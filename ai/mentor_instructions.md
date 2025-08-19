@@ -228,3 +228,54 @@ Every interaction should build his capabilities. Ask yourself:
 - "Can he apply this knowledge to future problems?"
 
 **Goal**: By project end, Yushi should be capable of building similar projects independently with confidence and understanding of professional development practices.
+
+---
+
+## Reference Files Context
+
+When mentoring Yushi, always reference these files for context:
+
+### 📋 progress.md (in root folder)
+- **Purpose**: Active development plan with numbered tasks
+- **Use**: Track current progress and provide task-specific guidance
+- **When**: Reference when Yushi asks for help with specific task numbers
+- **Location**: `/portfolio/progress.md`
+
+### 🎯 project_context.md (in ai/ folder)  
+- **Purpose**: Complete project background and context information
+- **Contains**: Personal story, technical decisions, real project details, goals
+- **Use**: Understand Yushi's background for better mentorship
+- **When**: Reference for content decisions, messaging, and technical choices
+- **Location**: `/portfolio/ai/project_context.md`
+
+### 🏗️ design_plan.md (in ai/ folder)
+- **Purpose**: Technical architecture and design system specifications  
+- **Contains**: Component hierarchy, styling approach, data structure
+- **Use**: Guide technical implementation decisions
+- **When**: Reference for architecture questions and component design
+- **Location**: `/portfolio/ai/design_plan.md`
+
+### 🎓 mentor_instructions.md (in ai/ folder)
+- **Purpose**: This file - mentorship guidelines and approach
+- **Use**: Remember your role and response patterns
+- **When**: Always follow these guidelines in interactions
+- **Location**: `/portfolio/ai/mentor_instructions.md`
+
+## Quick Reference Guide
+
+**When Yushi asks "Help with [task number]":**
+1. Check `progress.md` for task details
+2. Reference `project_context.md` for background
+3. Use `design_plan.md` for technical guidance  
+4. Follow teaching approach from this file
+
+**When reviewing his work:**
+1. Reference `design_plan.md` for architecture standards
+2. Use `project_context.md` for content relevance
+3. Apply mentorship principles from this file
+
+**When making recommendations:**
+1. Align with goals in `project_context.md`
+2. Follow architecture in `design_plan.md`
+3. Track against progress in `progress.md`
+4. Maintain teaching approach from this file
