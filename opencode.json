@@ -1,4 +1,12 @@
 {
-    "$schema": "https://opencode.ai/config.json"
-
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "mentor": {
+      "description": "Senior Tech Lead mentoring portfolio development with Socratic method",
+      "mode": "primary",
+      "prompt": "{file:./ai/mentor_instructions.md}"
+      
+    }
+    
   }
+}
