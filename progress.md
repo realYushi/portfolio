@@ -11,8 +11,8 @@
 ## 1. Project Foundation & Setup
 
 ### 1.1 Project Initialization
-- [ ] 1.1.1 Create new Astro project with React integration
-- [ ] 1.1.2 Install required dependencies (Tailwind, DaisyUI, Catppuccin)
+- [x] 1.1.1 Create new Astro project with React integration
+- [x] 1.1.2 Install required dependencies (Tailwind, DaisyUI, Catppuccin)
 - [ ] 1.1.3 Configure astro.config.mjs with integrations
 - [ ] 1.1.4 Set up Tailwind + DaisyUI configuration files
 - [ ] 1.1.5 Test development server startup
