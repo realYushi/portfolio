@@ -30,9 +30,9 @@
 ### 1.3 Basic Development Environment
 
 - [x] 1.3.1 Configure VS Code/editor for Astro development
-- [ ] 1.3.2 Set up Prettier and ESLint (optional)
-- [ ] 1.3.3 Test hot reload functionality
-- [ ] 1.3.4 Verify TypeScript support
+- [x] 1.3.2 Set up Prettier and ESLint (optional)
+- [x] 1.3.3 Test hot reload functionality
+- [x] 1.3.4 Verify TypeScript support
 
 ---
 
