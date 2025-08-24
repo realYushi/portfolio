@@ -21,7 +21,7 @@
 
 ### 1.2 Project Structure Setup
 
-- [ ] 1.2.1 Create folder structure per design plan
+- [x] 1.2.1 Create folder structure per design plan
 - [ ] 1.2.2 Set up data folder with JSON files
 - [ ] 1.2.3 Create styles folder with global CSS
 - [ ] 1.2.4 Initialize git repository and first commit
