@@ -1,6 +1,7 @@
 # Personal Portfolio Design Plan
 
 ## Hosting & Technology Stack
+
 - **Hosting**: Vercel (SSG + SSR support)
 - **Framework**: Astro with React integration
 - **Styling**: Tailwind CSS + DaisyUI + Catppuccin theme
@@ -11,6 +12,7 @@
 - **Deployment**: Auto-deploy from GitHub
 
 ## Project Structure
+
 ```
 src/
 ├── components/
@@ -52,6 +54,7 @@ src/
 ## Component Hierarchy
 
 ### Personal Portfolio Landing Page
+
 ```
 Portfolio Landing Page
 ├── Layout.astro
@@ -118,12 +121,14 @@ Portfolio Landing Page
 ## Component Types
 
 ### Layout Components
+
 - **Layout.astro**: Main page wrapper with global styles
 - **Header.astro**: Navigation with hire me CTA
 - **Footer.astro**: Links and social media
 - **Section.astro**: Reusable section wrapper
 
 ### Content Components
+
 - **Hero.astro**: Introduction with chef → developer story
 - **About.astro**: Detailed "From Kitchen to Code" narrative
 - **Features.astro**: Skills and services with chef parallels
@@ -131,12 +136,14 @@ Portfolio Landing Page
 - **Contact.astro**: Contact form and availability
 
 ### React Interactive Components
+
 - **ContactForm.jsx**: Form with server-side handling
 - **TypewriterEffect.jsx**: Animated hero text
 - **ProjectFilter.jsx**: Filter projects by technology
 - **ThemeToggle.jsx**: Dark/light mode (optional)
 
 ### UI Components
+
 - **Button.astro**: CTAs and navigation buttons
 - **Card.astro**: Project and feature containers
 - **FeatureCard.astro**: Skills/services display
@@ -148,6 +155,7 @@ Portfolio Landing Page
 ## Design Principles
 
 ### Personal Brand Strategy
+
 - Lead with unique chef → developer story
 - Focus on problem-solving and transferable skills
 - Authentic narrative over generic portfolio
@@ -155,6 +163,7 @@ Portfolio Landing Page
 - Link to blog for deeper engagement
 
 ### Visual Style
+
 - Clean, modern professional aesthetic
 - Catppuccin Mocha theme (dark) with Latte (light) option
 - DaisyUI component-based design system
@@ -162,6 +171,7 @@ Portfolio Landing Page
 - Smooth hover transitions and micro-interactions
 
 ### DaisyUI + Catppuccin Design System
+
 - **Theme**: Catppuccin Mocha (primary) / Latte (light mode)
 - **Components**: DaisyUI pre-built components (cards, buttons, forms)
 - **Colors**: Catppuccin semantic colors (mauve, lavender, sky, teal)
@@ -170,6 +180,7 @@ Portfolio Landing Page
 - **Animations**: DaisyUI built-in hover states and transitions
 
 ### Layout Patterns
+
 - Hero with compelling personal story hook
 - Content-heavy about section for authenticity
 - Project showcase with live demos
@@ -178,6 +189,7 @@ Portfolio Landing Page
 - Integration with existing blog
 
 ### Responsive Breakpoints
+
 - **Mobile**: Default (< 640px) - Single column, large touch targets
 - **Tablet**: sm: (640px+) - Two column grids, refined spacing
 - **Desktop**: md: (768px+) - Three column grids, hover states
@@ -188,12 +200,14 @@ Portfolio Landing Page
 ## Data Structure
 
 ### features.json
+
 - Feature ID and icon
 - Chef skill parallel title
 - Description linking chef experience to dev skills
 - Technology tags and benefits list
 
-### projects.json  
+### projects.json
+
 - Project metadata (title, description, impact)
 - Technology stack used
 - Live demo and GitHub repository links
@@ -201,12 +215,14 @@ Portfolio Landing Page
 - Featured project designation
 
 ### experience.json
+
 - Work experience with timeline
 - Company information and role details
 - Key achievements and impact
 - Technology stack per role
 
 ### skills.json
+
 - Skill categories (Frontend, Backend, Tools)
 - Category icons and technology lists
 - Proficiency levels or certifications
@@ -214,12 +230,14 @@ Portfolio Landing Page
 ## DaisyUI + Catppuccin Integration
 
 ### Setup Requirements
+
 - Tailwind CSS with DaisyUI plugin
 - Catppuccin theme configuration
 - Astro integration for both libraries
 - Typography plugin for blog content
 
 ### Catppuccin Color Palette
+
 - **Primary**: Mauve (#cba6f7) - main brand color
 - **Secondary**: Lavender (#b4befe) - accent elements
 - **Accent**: Sky (#89dceb) - CTAs and highlights
@@ -229,6 +247,7 @@ Portfolio Landing Page
 - **Error**: Red (#f38ba8) - error states
 
 ### DaisyUI Components to Use
+
 - **Cards**: Project cards, feature cards
 - **Buttons**: CTAs, navigation, form buttons
 - **Forms**: Contact form elements
@@ -240,12 +259,14 @@ Portfolio Landing Page
 ## Theme & Styling Strategy
 
 ### Catppuccin Theme Implementation
+
 - **Dark Mode**: Catppuccin Mocha (primary theme)
 - **Light Mode**: Catppuccin Latte (optional toggle)
 - **Semantic Colors**: Use Catppuccin's semantic naming
 - **Consistency**: Maintain color harmony across all components
 
 ### DaisyUI Component Usage
+
 - **Hero**: DaisyUI hero component with gradient background
 - **Cards**: Consistent card styling for projects and features
 - **Forms**: DaisyUI form controls with validation states
@@ -255,17 +276,20 @@ Portfolio Landing Page
 ## Copy Framework
 
 ### Hero Section
+
 - **Hook**: "From Kitchen to Code: Building Digital Solutions"
 - **Value Prop**: "Full-stack developer bringing chef-level precision to software development"
 - **Availability**: "Currently available for new projects"
 
 ### About Section Content
+
 - **Career transition story**: 6 years as professional chef → computer science student
 - **Skills parallels**: Pressure handling, precision, teamwork, problem-solving
 - **Current status**: 3rd year CS student, recent internship graduate
 - **Values**: Quality, continuous learning, collaboration
 
 ### Contact Section
+
 - **Availability**: "Available for internships and junior developer roles"
 - **Response time**: "I'll get back to you within 24 hours"
 - **Collaboration style**: "Let's build something amazing together"

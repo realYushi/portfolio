@@ -5,8 +5,6 @@
       "description": "Senior Tech Lead mentoring portfolio development with Socratic method",
       "mode": "primary",
       "prompt": "{file:./ai/mentor_instructions.md}"
-      
     }
-    
   }
 }
