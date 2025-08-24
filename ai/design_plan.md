@@ -3,6 +3,7 @@
 ## Hosting & Technology Stack
 
 ### **Core Stack**
+
 - **Hosting**: Vercel (SSG + SSR support)
 - **Framework**: Astro 5.13.2 with React 19.1.1 integration
 - **Language**: TypeScript 5.9.2 with strict mode
@@ -14,6 +15,7 @@
 - **Deployment**: Auto-deploy from GitHub
 
 ### **Professional Development Environment**
+
 - **Code Quality**: ESLint 9.34.0 (modern flat config) + Prettier 3.6.2
 - **TDD Workflow**: Dual ESLint configs for "rush to MVP" → refactor approach
   - `eslint.config.js` - Error-focused for GREEN stage development
@@ -24,6 +26,7 @@
 - **npm Scripts**: `lint`, `lint:full`, `lint:fix`, `format`, `format:check`, `build`
 
 ### **Development Philosophy**
+
 - **TDD "Rush to MVP" Approach**: Fast iteration with quality gates
 - **Professional Standards**: Industry-standard tooling for team collaboration
 - **Modern Practices**: Latest stable versions, flat configs, automated workflows
@@ -31,6 +34,7 @@
 ## ✅ Development Workflow (IMPLEMENTED)
 
 ### **TDD-Optimized Workflow**
+
 ```
 GREEN STAGE (Fast Development):
 Code → npm run lint (errors only) → Continue iterating
@@ -43,6 +47,7 @@ git push → GitHub Actions → ESLint + Prettier + Build → ✅/❌
 ```
 
 ### **Available Commands**
+
 ```bash
 npm run dev          # Start Astro development server
 npm run lint         # TDD-friendly linting (errors only)
@@ -55,6 +60,7 @@ npm run preview      # Preview production build
 ```
 
 ### **Quality Assurance**
+
 - **ESLint 9.x**: Modern flat config with Astro + TypeScript support
 - **Prettier**: Consistent code formatting across all file types
 - **GitHub Actions**: Automated quality checks on every push
@@ -64,6 +70,7 @@ npm run preview      # Preview production build
 ## Project Structure
 
 ### **Actual Implementation**
+
 ```
 portfolio/
 ├── .github/
