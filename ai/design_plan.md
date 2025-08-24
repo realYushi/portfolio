@@ -2,53 +2,120 @@
 
 ## Hosting & Technology Stack
 
+### **Core Stack**
 - **Hosting**: Vercel (SSG + SSR support)
-- **Framework**: Astro with React integration
-- **Styling**: Tailwind CSS + DaisyUI + Catppuccin theme
+- **Framework**: Astro 5.13.2 with React 19.1.1 integration
+- **Language**: TypeScript 5.9.2 with strict mode
+- **Styling**: Tailwind CSS 4.1.12 + DaisyUI 5.0.50 + Catppuccin theme
 - **Design System**: DaisyUI components with Catppuccin colors
 - **Fonts**: Inter (system fallback)
 - **Icons**: Heroicons or Lucide React
 - **Blog**: Separate site at blog.yushi91.com
 - **Deployment**: Auto-deploy from GitHub
 
+### **Professional Development Environment**
+- **Code Quality**: ESLint 9.34.0 (modern flat config) + Prettier 3.6.2
+- **TDD Workflow**: Dual ESLint configs for "rush to MVP" → refactor approach
+  - `eslint.config.js` - Error-focused for GREEN stage development
+  - `eslint.full.config.js` - Complete professional rules for REFACTOR stage
+- **Plugins**: eslint-plugin-astro, prettier-plugin-astro, @typescript-eslint/parser
+- **Hot Reload**: Vite development server with instant updates
+- **CI/CD**: GitHub Actions pipeline (.github/workflows/quality-check.yml)
+- **npm Scripts**: `lint`, `lint:full`, `lint:fix`, `format`, `format:check`, `build`
+
+### **Development Philosophy**
+- **TDD "Rush to MVP" Approach**: Fast iteration with quality gates
+- **Professional Standards**: Industry-standard tooling for team collaboration
+- **Modern Practices**: Latest stable versions, flat configs, automated workflows
+
+## ✅ Development Workflow (IMPLEMENTED)
+
+### **TDD-Optimized Workflow**
+```
+GREEN STAGE (Fast Development):
+Code → npm run lint (errors only) → Continue iterating
+
+REFACTOR STAGE (Quality Focus):
+npm run lint:full → npm run format → Clean professional code
+
+CI/CD PIPELINE (Quality Gates):
+git push → GitHub Actions → ESLint + Prettier + Build → ✅/❌
+```
+
+### **Available Commands**
+```bash
+npm run dev          # Start Astro development server
+npm run lint         # TDD-friendly linting (errors only)
+npm run lint:full    # Complete professional linting rules
+npm run lint:fix     # Auto-fix linting issues
+npm run format       # Format all files with Prettier
+npm run format:check # Check formatting without changes
+npm run build        # Build for production
+npm run preview      # Preview production build
+```
+
+### **Quality Assurance**
+- **ESLint 9.x**: Modern flat config with Astro + TypeScript support
+- **Prettier**: Consistent code formatting across all file types
+- **GitHub Actions**: Automated quality checks on every push
+- **TypeScript**: Strict mode for type safety
+- **Hot Reload**: Vite-powered instant development feedback
+
 ## Project Structure
 
+### **Actual Implementation**
 ```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── Header.astro
-│   │   ├── Footer.astro
-│   │   └── Section.astro
-│   ├── Hero.astro
-│   ├── About.astro (Content-heavy story section)
-│   ├── Features.astro
-│   ├── Showcase.astro
-│   ├── Contact.astro
-│   ├── react/ (Interactive components)
-│   │   ├── ContactForm.jsx
-│   │   ├── TypewriterEffect.jsx
-│   │   ├── ThemeToggle.jsx
-│   │   └── ProjectFilter.jsx
-│   ├── ui/
-│   │   ├── Button.astro
-│   │   ├── Card.astro
-│   │   ├── Badge.astro
-│   │   └── FeatureCard.astro
-│   └── SocialLinks.astro
-├── layouts/
-│   └── Layout.astro
-├── pages/
-│   ├── index.astro
-│   └── api/
-│       └── contact.js (Server-side form handling)
-├── styles/
-│   └── global.css (includes Tailwind v4 + Catppuccin + DaisyUI)
-└── data/
-    ├── features.json
-    ├── projects.json
-    ├── skills.json
-    └── experience.json
+portfolio/
+├── .github/
+│   └── workflows/
+│       └── quality-check.yml (CI/CD pipeline)
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.astro
+│   │   │   ├── Footer.astro
+│   │   │   └── Section.astro
+│   │   ├── Hero.astro
+│   │   ├── About.astro (Content-heavy story section)
+│   │   ├── Features.astro
+│   │   ├── Showcase.astro
+│   │   ├── Contact.astro
+│   │   ├── react/ (Interactive components)
+│   │   │   ├── ContactForm.jsx
+│   │   │   ├── TypewriterEffect.jsx
+│   │   │   ├── ThemeToggle.jsx
+│   │   │   └── ProjectFilter.jsx
+│   │   ├── ui/
+│   │   │   ├── Button.astro
+│   │   │   ├── Card.astro
+│   │   │   ├── Badge.astro
+│   │   │   └── FeatureCard.astro
+│   │   └── SocialLinks.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   └── api/
+│   │       └── contact.js (Server-side form handling)
+│   ├── styles/
+│   │   ├── global.css (Tailwind v4 + Catppuccin + DaisyUI)
+│   │   └── catppuccinTheme.latte.ts (Theme configuration)
+│   └── data/
+│       ├── features.json
+│       ├── projects.json
+│       ├── skills.json
+│       └── experience.json
+├── ai/ (Development documentation)
+│   ├── design_plan.md
+│   ├── mentor_instructions.md
+│   └── project_context.md
+├── .prettierrc (Code formatting configuration)
+├── eslint.config.js (TDD-friendly linting rules)
+├── eslint.full.config.js (Complete professional rules)
+├── astro.config.mjs (Astro + React + Tailwind integration)
+├── tsconfig.json (TypeScript configuration)
+├── progress.md (Development tracking)
+└── package.json (Dependencies and npm scripts)
 ```
 
 ## Component Hierarchy
@@ -229,12 +296,13 @@ Portfolio Landing Page
 
 ## DaisyUI + Catppuccin Integration
 
-### Setup Requirements
+### Setup Requirements ✅ IMPLEMENTED
 
-- Tailwind CSS with DaisyUI plugin
-- Catppuccin theme configuration
-- Astro integration for both libraries
-- Typography plugin for blog content
+- ✅ **Tailwind CSS 4.1.12** with DaisyUI 5.0.50 plugin
+- ✅ **Catppuccin theme configuration** (@catppuccin/daisyui 2.1.1, @catppuccin/tailwindcss 1.0.0)
+- ✅ **Astro integration** for both libraries via astro.config.mjs
+- ✅ **TypeScript theme file** (src/styles/catppuccinTheme.latte.ts)
+- **Typography plugin** for blog content (future implementation)
 
 ### Catppuccin Color Palette
 
