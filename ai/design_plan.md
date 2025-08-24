@@ -41,8 +41,7 @@ src/
 │   └── api/
 │       └── contact.js (Server-side form handling)
 ├── styles/
-│   ├── global.css
-│   └── tailwind.css
+│   └── global.css (includes Tailwind v4 + Catppuccin + DaisyUI)
 └── data/
     ├── features.json
     ├── projects.json
