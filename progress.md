@@ -2,11 +2,6 @@
 
 ## Progress Tracking System
 
-**When you get stuck, reference the task number (e.g., "Help with 1.2.3") so I know exactly where you are and can provide contextual assistance.**
-
-**Current Progress**: Ready to begin
-**Next Task**: 1.1 Project Initialization
-
 ---
 
 ## 1. Project Foundation & Setup
